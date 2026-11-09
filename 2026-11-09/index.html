@@ -50,30 +50,32 @@
                 </p>
                 
                 <p>
-                    If a drive was chosen as more urgent, it will then select a task, based on specific criteria
-                    of that drive (basically, a SelectTask function in the code). This task is the way that
-                    animal or hominid will act on to fulfill its drive.
+                    To achieve that, every drive implements a function that calculates the current
+                    urgency. All drives "compete", and the more urgent one is chosen. It will then select a
+                    task, based on specific criteria of that drive (basically, a function that returns a task).
+                    This task is the way that animal or hominid will act on to fulfill its drive.
                 </p>
 
                 <p>
                     For example: a hominid has a "drive to eat", and decides (based on the urgency/score) that 
                     the time to eat is now. This hominid will then check its inventory, looking for food. If there's
-                    food, it'll choose the Eat task. If not, it'll choose the Forage task, to try and find some
+                    food, it'll choose the "eat task". If not, it'll choose the "forage task", to try and find some
                     food. So a drive likely leads to a task. And this chosen task depends on specific criteria,
                     such as physical proximity or health.
                 </p>
 
                 <p>
-                    I've noticed that after some initial tinkering, it seems like most of the game's code can fit
+                    I've noticed that after some initial tinkering, it seems like a lot of the game's code can fit
                     in these systems. Recently, many new implementations were just new or modified drives and tasks.
                 </p>
 
                 <p>
                     I find it really interesting to notice the effects of changes made to tasks, or what new behaviors
                     appear after the introduction of new drives. For example: hominids rest by the campfire by default.
-                    This creates a rather common effect - to see multiple humans gathered around the campfire.
-                    The gathering wasn't programmed into the game, but it happened as a consequence of individual drives.
-                    I feel like experimenting with emergent social behavior as a consequence of drive-fulfillment.
+                    This creates a rather common effect - to see multiple humans gathered around the campfire, relaxing
+                    together. This gathering wasn't programmed into the game, but it happened as a consequence of
+                    individual drives. I feel like, in the future, experimenting with emergent social behavior as a
+                    consequence of drive-fulfillment.
                 </p>
 
                 <p>
@@ -85,7 +87,8 @@
 
                 <p>
                     I want this game to have interesting hunting techniques, such as luring, tricking, or tiring animals.
-                    I want the player to feel rewarded after a good hunt, but also to experience misery and starvation.
+                    I want the player to feel rewarded after a good hunt, but also, to feel how bad it gets when there's
+                    nothing to eat.
                 </p>
 
                 <figure>
