@@ -84,16 +84,24 @@ main section p {
     line-height: 1.8;
 }
 
-main section p:has(> img) {
+.post figure {
     margin-block: 1.75rem;
     padding: 0.45rem;
     border: 1px solid var(--line);
     background: var(--surface);
 }
 
-main section img {
+.post img {
     width: 100%;
     border: 1px solid rgb(38 52 43 / 12%);
+}
+
+.post figcaption {
+    margin-top: 0.55rem;
+    color: var(--muted);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
 }
 
 main > a {
